@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demos — Sites sob medida · Itajaí/SC</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#0e0d0b; --fg:#f2efe8; --mut:#9a948a; --card:#181613; --line:#2a2721; }
+  * { margin:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--fg); font-family:-apple-system, "Segoe UI", Roboto, sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:48px 20px; }
+  main { max-width:760px; width:100%; }
+  .tag { color:var(--mut); text-transform:uppercase; letter-spacing:.18em; font-size:12px; }
+  h1 { font-size:clamp(28px,5vw,40px); font-weight:700; margin:10px 0 8px; }
+  p.sub { color:var(--mut); line-height:1.6; margin-bottom:36px; }
+  .grid { display:grid; gap:14px; }
+  a.card { display:flex; justify-content:space-between; align-items:center; gap:16px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; text-decoration:none; color:var(--fg); transition:border-color .2s, transform .2s; }
+  a.card:hover { border-color:var(--fg); transform:translateY(-2px); }
+  .nome { font-weight:650; font-size:17px; }
+  .cat { color:var(--mut); font-size:13.5px; margin-top:3px; }
+  .arrow { color:var(--mut); font-size:18px; flex-shrink:0; }
+  footer { margin-top:40px; color:var(--mut); font-size:13px; line-height:1.6; }
+</style>
+</head>
+<body>
+<main>
+  <span class="tag">Demos ao vivo</span>
+  <h1>Sites sob medida para negócios locais</h1>
+  <p class="sub">Protótipos funcionais construídos para negócios de Itajaí/SC — design único para cada um, já no ar.</p>
+  <div class="grid">
+    <a class="card" href="./clinica-odontologica-itajai/">
+      <div><div class="nome">Clínica Odontológica Itajaí</div><div class="cat">Odontologia · Centro</div></div>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="card" href="./all-deck-buteco-raiz/">
+      <div><div class="nome">All Deck — Buteco Raiz</div><div class="cat">Petiscaria / Buteco · Fazenda</div></div>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="card" href="./rose-paulichen/">
+      <div><div class="nome">Rose Paulichen — Estética Avançada</div><div class="cat">Clínica de estética · Praia Brava</div></div>
+      <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+  <footer>Cada site é único: direção de arte, texto e imagens pensados para o negócio. Feito em Itajaí.</footer>
+</main>
+</body>
+</html>

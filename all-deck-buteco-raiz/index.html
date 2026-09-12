@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Deck — Buteco Raiz | Fazenda, Itajaí</title>
+<meta name="description" content="All Deck — o buteco raiz da Fazenda, em Itajaí. Porções clássicas, chopp Brahma gelado, laranjinha e aquele atendimento sem frescura. Chama no WhatsApp.">
+<link rel="icon" type="image/x-icon" href="assets/all-deck-favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<!-- Ícones: Font Awesome Free (CC BY 4.0) — attribution exigida: https://fontawesome.com/license/free -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --red:#911C1D;
+  --red-deep:#6E1314;
+  --black:#14100C;
+  --yellow:#FBA81A;
+  --cream:#F6F7E2;
+  --cream-soft:#FBFCF0;
+  --choc:#241511;
+  --white:#FFFDF7;
+  --border:#E4E5CC;
+  --shadow: 0 18px 40px -18px rgba(56,24,17,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Archivo',sans-serif;
+  background:var(--cream);
+  color:var(--choc);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--red);color:var(--cream)}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--black);color:var(--cream);overflow:hidden;white-space:nowrap;padding:8px 0;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.ticker.tck-red{background:var(--red)}
+.ticker-track{display:inline-flex;gap:0;animation:tick 26s linear infinite;will-change:transform}
+.ticker span{padding:0 10px;display:inline-flex;align-items:center;gap:10px}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+/* ---------- navbar ---------- */
+header{position:sticky;top:0;z-index:50;background:var(--black);border-bottom:1px solid rgba(246,247,226,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Alfa Slab One',serif;font-size:24px;letter-spacing:.02em;color:var(--cream);display:flex;align-items:center;gap:12px;transform:rotate(-1deg)}
+.logo .mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#0B0B0B;border:2px solid var(--cream);border-radius:12px;transform:rotate(-4deg);overflow:hidden;box-shadow:0 4px 12px -4px rgba(0,0,0,.5)}
+.logo .mark img{width:100%;height:100%;object-fit:cover;transform:rotate(4deg) scale(0.66)}
+.nav-links{display:flex;gap:28px;font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--cream)}
+.nav-links a{opacity:.85;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--cream);border:none;border-radius:9999px;padding:14px 26px;font-weight:700;font-size:15px;letter-spacing:.03em;cursor:pointer;transition:transform .2s, box-shadow .2s, background .2s;text-transform:uppercase;font-family:'Archivo',sans-serif}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(56,24,17,.5)}
+.btn-cream{background:var(--cream);color:var(--red)}
+.btn-ghost{background:transparent;color:var(--choc);border:2px solid var(--choc);padding:12px 24px}
+.btn-ghost:hover{background:var(--choc);color:var(--cream)}
+.btn svg{width:17px;height:17px}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 84px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(145,28,29,.08);border:1px solid rgba(145,28,29,.25);border-radius:9999px;padding:7px 14px;margin-bottom:22px;transform:rotate(-1deg)}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(44px,5.4vw,74px);line-height:.98;letter-spacing:-.01em;text-transform:uppercase}
+h1 .accent{color:var(--red);position:relative;white-space:nowrap}
+h1 .accent::after{content:"";position:absolute;left:-2%;bottom:.06em;width:104%;height:.24em;background:rgba(145,28,29,.16);border-radius:4px;transform:rotate(-.6deg)}
+.hero p.lead{font-size:19px;line-height:1.55;margin:22px 0 30px;max-width:520px;color:#4A2B1C}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-proof{display:flex;align-items:center;gap:14px;margin-top:34px}
+.stars{color:var(--red);font-size:15px;letter-spacing:2px}
+.hero-proof .score{font-family:'Archivo Black',sans-serif;font-size:26px}
+.hero-proof .meta{font-size:14px;color:#5C3A26;line-height:1.35}
+.avatars{display:flex;margin-right:4px}
+.avatars span{width:38px;height:38px;border-radius:50%;background:var(--choc);color:var(--cream);display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;border:2px solid var(--cream);margin-left:-10px}
+.avatars span:first-child{margin-left:0}
+.avatars span:nth-child(2){background:var(--red)}
+.avatars span:nth-child(3){background:#C0552F}
+
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(1.2deg);position:relative;z-index:2}
+.hero-photo img{width:100%;height:540px;object-fit:cover}
+.stamp{position:absolute;top:-32px;right:2px;width:132px;height:132px;z-index:3;transform:rotate(-7deg)}
+.stamp svg{width:100%;height:100%}
+.stamp .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+.stamp .center img{width:58px;height:58px;object-fit:cover;border-radius:50%;box-shadow:0 4px 10px -2px rgba(56,24,17,.4)}
+.badge-float{position:absolute;z-index:3;background:var(--cream);color:var(--red);border:1.5px solid var(--red);border-radius:9999px;padding:9px 18px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 18px -8px rgba(56,24,17,.4)}
+.bf-1{top:64px;left:-26px;transform:rotate(-6deg)}
+.bf-2{bottom:48px;left:-40px;transform:rotate(4deg)}
+
+/* ---------- manifesto ---------- */
+.manifesto{background:var(--black);color:var(--cream);padding:96px 0;position:relative;text-align:center;overflow:hidden}
+.manifesto h2{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,4vw,54px);line-height:1.15;text-transform:uppercase;max-width:860px;margin:0 auto;letter-spacing:.01em}
+.manifesto .by{margin-top:26px;font-family:'Permanent Marker',cursive;font-size:21px;color:var(--yellow);opacity:.95}
+.m-badge{position:absolute;background:transparent;color:var(--cream);border:1.5px solid rgba(246,247,226,.7);border-radius:9999px;padding:10px 22px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.mb-1{top:15%;left:7%;transform:rotate(-8deg)}
+.mb-2{top:22%;right:8%;transform:rotate(7deg)}
+.mb-3{bottom:18%;left:12%;transform:rotate(5deg)}
+.mb-4{bottom:24%;right:10%;transform:rotate(-6deg)}
+
+/* ---------- section base ---------- */
+section{padding:92px 0}
+.sec-head{margin-bottom:48px}
+.sec-head .kicker{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:block}
+.sec-head h2{font-family:'Archivo Black',sans-serif;font-size:clamp(32px,3.6vw,48px);text-transform:uppercase;line-height:1.02}
+
+/* ---------- na mesa ---------- */
+.mesa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mesa-card{background:var(--cream-soft);border:1px solid var(--border);border-radius:22px;overflow:hidden;transition:transform .25s, box-shadow .25s;display:flex;flex-direction:column}
+.mesa-card .body{flex:1}
+.mesa-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.mesa-card .ph{height:230px;overflow:hidden;position:relative}
+.mesa-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.mesa-card:hover .ph img{transform:scale(1.05)}
+.mesa-card .tag{position:absolute;top:12px;left:12px;background:var(--cream);color:var(--red);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:9999px;padding:6px 12px;border:1.5px solid var(--red);transform:rotate(-3deg)}
+.mesa-card .body{padding:18px 18px 20px}
+.mesa-card h3{font-family:'Archivo Black',sans-serif;font-size:17px;text-transform:uppercase;margin-bottom:6px}
+.mesa-card p{font-size:14px;line-height:1.5;color:#5C3A26}
+.mesa-note{margin-top:26px;font-size:14px;color:#5C3A26;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.mesa-note .marker{font-family:'Permanent Marker',cursive;font-size:19px;color:var(--red);transform:rotate(-1.5deg)}
+
+/* ---------- ambiente ---------- */
+.ambiente{background:var(--black);color:var(--cream)}
+.ambiente .sec-head .kicker{color:var(--yellow)}
+.amb-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.amb-photo{position:relative}
+.amb-main{border-radius:26px;overflow:hidden;box-shadow:0 24px 60px -20px rgba(0,0,0,.5);transform:rotate(-1.2deg)}
+.amb-main img{width:100%;height:400px;object-fit:cover}
+.amb-pol{position:absolute;background:var(--white);padding:8px 8px 34px;box-shadow:0 16px 36px -12px rgba(0,0,0,.55);border-radius:6px;z-index:2}
+.amb-pol img{object-fit:cover;border-radius:3px}
+.amb-pol figcaption{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-family:'Permanent Marker',cursive;font-size:15px;color:#5C3A26}
+.amb-p1{width:190px;right:-24px;bottom:-34px;transform:rotate(5deg)}
+.amb-p1 img{width:100%;height:130px}
+.amb-p2{width:200px;left:-20px;top:-30px;transform:rotate(-4deg)}
+.amb-p2 img{width:100%;height:120px}
+.ambiente h2{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,3.4vw,46px);text-transform:uppercase;line-height:1.05;margin-bottom:20px}
+.ambiente h2 em{font-style:normal;color:var(--yellow)}
+.ambiente p{font-size:17px;line-height:1.6;color:rgba(246,247,226,.82);margin-bottom:26px;max-width:480px}
+.amb-list{list-style:none;margin-bottom:32px}
+.amb-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;font-size:16px;line-height:1.45}
+.amb-list li i{color:var(--yellow);margin-top:3px;flex-shrink:0}
+.amb-list li strong{color:var(--cream)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--cream-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.rev-wrap{position:relative}
+.rev-track{overflow:hidden;border-radius:26px}
+.rev-track-inner{display:flex;transition:transform .5s cubic-bezier(.22,.8,.28,1)}
+.rev-card{min-width:100%;background:var(--white);border:1px solid var(--border);border-radius:26px;padding:52px 56px;text-align:center;box-shadow:0 12px 30px -18px rgba(56,24,17,.2)}
+.rev-card .stars{margin-bottom:20px;font-size:18px}
+.rev-card blockquote{font-family:'Archivo Black',sans-serif;font-size:clamp(19px,2vw,27px);line-height:1.35;max-width:760px;margin:0 auto 22px}
+.rev-card .who{font-size:14px;color:#7A5638;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.rev-card .who small{display:block;font-weight:400;text-transform:none;margin-top:4px;font-size:13px;opacity:.8}
+.rev-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:28px}
+.rev-btn{width:48px;height:48px;border-radius:50%;border:2px solid var(--choc);background:transparent;color:var(--choc);font-size:16px;cursor:pointer;transition:background .2s,color .2s}
+.rev-btn:hover{background:var(--choc);color:var(--cream)}
+.rev-dots{display:flex;gap:8px}
+.rev-dots button{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--choc);background:transparent;cursor:pointer;opacity:.4}
+.rev-dots button.on{background:var(--red);border-color:var(--red);opacity:1}
+
+/* ---------- como chegar ---------- */
+.chegar-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.chegar-info h2{margin-bottom:18px}
+.chegar-info ul{list-style:none;margin:26px 0 32px}
+.chegar-info li{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+.chegar-info li .ic{width:44px;height:44px;flex-shrink:0;border-radius:14px;background:rgba(145,28,29,.09);border:1px solid rgba(145,28,29,.2);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:17px;transform:rotate(-2deg)}
+.chegar-info li .tx strong{display:block;font-size:16px;margin-bottom:3px}
+.chegar-info li .tx span{font-size:14.5px;color:#5C3A26;line-height:1.45}
+.chegar-cta{display:flex;gap:14px;flex-wrap:wrap}
+.fachada{position:relative}
+.fachada .pol{background:var(--white);padding:14px 14px 56px;box-shadow:var(--shadow);transform:rotate(2deg);border-radius:6px}
+.fachada .pol img{width:100%;height:520px;object-fit:cover;object-position:center 35%;border-radius:3px}
+.fachada .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-family:'Permanent Marker',cursive;font-size:19px;color:#5C3A26}
+
+/* ---------- cta final ---------- */
+.cta-final{background:var(--black);color:var(--cream);text-align:center;padding:110px 0;position:relative;overflow:hidden}
+.cta-logo{display:block;margin:0 auto 30px;width:170px;border:3px solid var(--cream);border-radius:20px;transform:rotate(-2deg) scale(0.8);box-shadow:0 18px 40px -12px rgba(0,0,0,.45)}
+.cta-final h2{font-family:'Archivo Black',sans-serif;font-size:clamp(38px,5vw,72px);text-transform:uppercase;line-height:1;margin-bottom:18px}
+.cta-final p{font-size:19px;color:rgba(246,247,226,.85);margin-bottom:38px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.55}
+.cta-final .btn-padding{padding:18px 38px;font-size:17px}
+.cta-final .hong{font-family:'Permanent Marker',cursive;font-size:20px;margin-top:22px;display:block;opacity:.85;transform:rotate(-1.5deg)}
+
+/* ---------- footer ---------- */
+footer{background:var(--cream);padding:56px 0 0}
+.giant{font-family:'Alfa Slab One',serif;color:var(--red);font-size:clamp(56px,11.5vw,168px);line-height:.9;text-align:center;letter-spacing:.01em;user-select:none;white-space:nowrap;overflow:hidden}
+.giant .dot{color:var(--choc)}
+.foot-row{border-top:1.5px solid var(--choc);margin-top:44px;padding:22px 0 26px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px;color:#5C3A26}
+.foot-row .links{display:flex;gap:22px;font-weight:600}
+.foot-row a:hover{color:var(--red)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid,.amb-split,.chegar-grid{grid-template-columns:1fr;gap:40px}
+  .hero-photo{max-width:560px;margin:0 auto}
+  .hero-photo img{height:420px}
+  .stamp{top:-24px;right:6px;width:104px;height:104px}
+  .stamp .center{font-size:17px}
+  .stamp .center img{width:46px;height:46px}
+  .amb-p1{width:150px;right:-4px;bottom:-20px}
+  .amb-p2{width:160px;left:-4px;top:-22px}
+  .bf-2{left:-6px}
+  .bf-1{left:-8px}
+  .mesa-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+  .rev-card{padding:36px 24px}
+  .m-badge{display:none}
+}
+@media (max-width:560px){
+  .mesa-grid{grid-template-columns:1fr}
+  .hero{padding:52px 0 64px}
+  section{padding:64px 0}
+  .btn{width:100%;justify-content:center}
+  .hero-cta .btn,.chegar-cta .btn-ghost{width:auto}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BarOrPub",
+  "name":"All Deck - Buteco Raiz",
+  "servesCuisine":["Petiscos","Buteco"],
+  "address":{"@type":"PostalAddress","streetAddress":"R. Fritz Schneider, 25","addressLocality":"Itajaí","addressRegion":"SC","postalCode":"88301-668","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":-26.9205419,"longitude":-48.6498353},
+  "telephone":"+55 47 99985-7365",
+  "sameAs":["https://www.facebook.com/All-Deck-775694852542156/"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"9"}
+}
+</script>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Buteco raiz ✦</span><span>Chopp gelado ✦</span><span>Erva mate? laranjinha é aqui ✦</span><span>Porção de verdade ✦</span><span>Fazenda · Itajaí ✦</span><span>Nota 4,9 no Google ✦</span>
+    <span>Buteco raiz ✦</span><span>Chopp gelado ✦</span><span>Erva mate? laranjinha é aqui ✦</span><span>Porção de verdade ✦</span><span>Fazenda · Itajaí ✦</span><span>Nota 4,9 no Google ✦</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top" aria-label="All Deck - Buteco Raiz">
+      <span class="mark"><img src="assets/mark.png" alt="Marca All Deck"></span>
+      ALL DECK
+    </a>
+    <nav class="nav-links">
+      <a href="#mesa">Na mesa</a>
+      <a href="#ambiente">O lugar</a>
+      <a href="#reviews">Fregueses</a>
+      <a href="#chegar">Como chegar</a>
+    </nav>
+    <a class="btn btn-cream" href="https://wa.me/5547999857365?text=Oi!%20Vi%20a%20p%C3%A1gina%20do%20All%20Deck%20e%20quero%20chegar%20hoje%21" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i> Chamar agora
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow rv"><i class="fa-solid fa-location-dot"></i> Fazenda · Itajaí</span>
+      <h1 class="rv">O <span class="accent">buteco raiz</span> do bairro inteiro.</h1>
+      <p class="lead rv">Porção que vem pra mesa pesada, chopp Brahma gelado de verdade e atendimento acolhedor, sem frescura nenhuma. É o tipo de lugar onde você entra estranho e sai com amigo novo.</p>
+      <div class="hero-cta rv">
+        <a class="btn" href="https://wa.me/5547999857365?text=Oi!%20Quero%20ir%20no%20All%20Deck%20hoje%21" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chegar hoje</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=All%20Deck%20-%20Buteco%20Raiz&query_place_id=ChIJ-S1jHvDL2JQR941v9jmWHSI" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> Ver no Maps</a>
+      </div>
+      <div class="hero-proof rv">
+        <div class="avatars"><span>M</span><span>G</span><span>L</span></div>
+        <div class="score">4,9</div>
+        <div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <div class="meta">9 avaliações no Google<br>e todo mundo voltando</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo rv">
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <defs><path id="circ" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs>
+          <text font-size="10.5" font-weight="700" fill="#911C1D" letter-spacing="2.5" font-family="'Archivo',sans-serif">
+            <textPath href="#circ">ALL DECK • BUTECO RAIZ • FAZENDA • ALL DECK • BUTECO</textPath>
+          </text>
+        </svg>
+        <div class="center"><img src="assets/mark.png" alt="Marca All Deck"></div>
+      </div>
+      <div class="frame"><img src="hero.jpg" alt="Mesa de boteco com chopp gelado e porção crocante" loading="eager"></div>
+      <span class="badge-float bf-1">Chopp Brahma gelado</span>
+      <span class="badge-float bf-2">Porção pesada 🍻</span>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER 2 -->
+<div class="ticker tck-red" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Música top ✦</span><span>Sem frescura ✦</span><span>Lugar de fazer amigo ✦</span><span>Intimista ✦</span><span>Chega mais ✦</span><span>Casa cheia todo fim de semana ✦</span>
+    <span>Música top ✦</span><span>Sem frescura ✦</span><span>Lugar de fazer amigo ✦</span><span>Intimista ✦</span><span>Chega mais ✦</span><span>Casa cheia todo fim de semana ✦</span>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto rv" id="manifesto">
+  <span class="m-badge mb-1">Boteco raiz</span>
+  <span class="m-badge mb-2">Chopp Brahma</span>
+  <span class="m-badge mb-3">Laranjinha</span>
+  <span class="m-badge mb-4">Cerveja gelada</span>
+  <div class="container">
+    <h2>“E tem laranjinha —<br>o que é perfeito.”</h2>
+    <div class="by">— Giovana, cliente, no Google</div>
+  </div>
+</section>
+
+<!-- NA MESA -->
+<section id="mesa">
+  <div class="container">
+    <div class="sec-head rv">
+      <span class="kicker">Direto pra mesa</span>
+      <h2>O que chega pesando<br>na sua mesa</h2>
+    </div>
+    <div class="mesa-grid">
+      <div class="mesa-card rv">
+        <div class="ph"><img src="assets/cervejas.jpg" alt="Dois chopps — claro e escuro — na mesa rústica do All Deck" loading="lazy"><span class="tag">Foto da casa</span></div>
+        <div class="body">
+          <h3>Chopp gelado</h3>
+          <p>Do claro ao escuro, sempre gelado de respeito — a taça sai suando e o primeiro gole não tem direito a conversa.</p>
+        </div>
+      </div>
+      <div class="mesa-card rv">
+        <div class="ph"><img src="petiscos.jpg" alt="Tábua de petiscos crocantes" loading="lazy"><span class="tag">Ilustrativo</span></div>
+        <div class="body">
+          <h3>Petiscos</h3>
+          <p>Porção “digna de boteco clássico”, na palavra dos fregueses. Vem quente, vem crocante, vem caprichada.</p>
+        </div>
+      </div>
+      <div class="mesa-card rv">
+        <div class="ph"><img src="laranjinha.jpg" alt="Drink laranjinha com gelo" loading="lazy"><span class="tag">Ilustrativo</span></div>
+        <div class="body">
+          <h3>Laranjinha</h3>
+          <p>A laranjinha da casa — “o que é perfeito”, segundo a Giovana. Refrescante, gelada e campeã de pedido.</p>
+        </div>
+      </div>
+      <div class="mesa-card rv">
+        <div class="ph"><img src="porcao.jpg" alt="Porção de torresmo com fritas na tábua" loading="lazy"><span class="tag">Ilustrativo</span></div>
+        <div class="body">
+          <h3>Porções</h3>
+          <p>Porção pra dividir — ou não. A comida é ótima e a renovação da mesa é garantida.</p>
+        </div>
+      </div>
+      <div class="mesa-card rv">
+        <div class="ph"><img src="assets/strogonoff.jpg" alt="Strogonoff com fritas e arroz — prato da casa" loading="lazy"><span class="tag">Foto da casa</span></div>
+        <div class="body">
+          <h3>Prato da casa</h3>
+          <p>Comida de verdade no almoço: strogonoff bem servido, fritas douradas e aquela vontade de repetir.</p>
+        </div>
+      </div>
+      <div class="mesa-card rv">
+        <div class="ph"><img src="gallery/gal-02.jpg" alt="Taça de chopp na mesa de madeira, com o cardápio do All Deck" loading="lazy"><span class="tag">Foto da casa</span></div>
+        <div class="body">
+          <h3>Cardápio na lousa</h3>
+          <p>A lousa manda no dia: pede na mesa o que saiu hoje que não tem erro — a cozinha capricha.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mesa-note rv">
+      <span class="marker">* o cardápio mudou na lousa de novo</span>
+      <span>Os pratos do dia mudam — chama no WhatsApp e pergunta o que tem hoje.</span>
+    </div>
+  </div>
+</section>
+
+<!-- AMBIENTE -->
+<section class="ambiente" id="ambiente">
+  <div class="container amb-split">
+    <div class="amb-photo rv">
+      <div class="amb-main"><img src="assets/interior-deck.jpg" alt="O deck do All Deck: mesas de madeira, balcão e teto translúcido" loading="lazy"></div>
+      <figure class="amb-pol amb-p2"><img src="assets/interior.jpg" alt="Interior noturno do buteco com TV e bandeiras" loading="lazy"><figcaption>pra ver o jogo 📺</figcaption></figure>
+      <figure class="amb-pol amb-p1"><img src="assets/deck.jpg" alt="Deck externo com barris e mesas azuis" loading="lazy"><figcaption>o deck 🌳</figcaption></figure>
+    </div>
+    <div class="rv">
+      <div class="sec-head"><span class="kicker">O lugar</span></div>
+      <h2>Intimista.<br>Sem frescura.<br><em>Como deve ser.</em></h2>
+      <p>Nada de pompom e cerimônia: mesa de madeira, música top tocando no talo, e gente que lembra do teu nome depois da segunda visita.</p>
+      <ul class="amb-list">
+        <li><i class="fa-solid fa-champagne-glasses"></i><span><strong>Lugar de fazer amigo</strong> — “excelente lugar para se fazer novos amigos”, diz quem frequenta.</span></li>
+        <li><i class="fa-solid fa-music"></i><span><strong>Música top</strong> — som com gosto de boteco bom, elogiado nas avaliações.</span></li>
+        <li><i class="fa-solid fa-heart"></i><span><strong>Atendimento acolhedor</strong> — sem frescura, do balcão direto pro coração e pra bandeja.</span></li>
+        <li><i class="fa-solid fa-tree"></i><span><strong>Deck ao ar livre + jogo na TV</strong> — sol de dia, futebol à noite: sempre tem um motivo pra ficar.</span></li>
+      </ul>
+      <a class="btn" href="https://wa.me/5547999857365?text=Oi!%20Quero%20reservar%20uma%20mesa%20no%20All%20Deck%21" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Guardar meu lugar</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="sec-head rv" style="text-align:center">
+      <span class="kicker">Avaliações do Google</span>
+      <h2>Quem chega, fica.<br>Quem fica, volta.</h2>
+    </div>
+    <div class="rev-wrap rv">
+      <div class="rev-track">
+        <div class="rev-track-inner" id="revInner">
+          <div class="rev-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <blockquote>“O meu bar favorito na região! Comida deliciosa, chopp Brahma saboroso, atendimento acolhedor e sem frescura — é um excelente lugar para se fazer novos amigos!”</blockquote>
+            <div class="who">Marcelo Rocha Dias <small>frequentador · avaliação no Google</small></div>
+          </div>
+          <div class="rev-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <blockquote>“A comida é ótima, o ambiente é muito agradável, o atendimento é excelente, a música é top também — e tem laranjinha, o que é perfeito!”</blockquote>
+            <div class="who">Giovana Willem <small>cliente · avaliação no Google</small></div>
+          </div>
+          <div class="rev-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <blockquote>“Uma experiência maravilhosa: lugar bem intimista e porções deliciosas, dignas de um boteco clássico! ‘Boteco raiz’ — como eles mesmos chamam.”</blockquote>
+            <div class="who">Lucas F. <small>cliente · avaliação no Google</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-nav">
+        <button class="rev-btn" id="revPrev" aria-label="Avaliação anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="rev-dots" id="revDots"></div>
+        <button class="rev-btn" id="revNext" aria-label="Próxima avaliação"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO CHEGAR -->
+<section id="chegar">
+  <div class="container chegar-grid">
+    <div class="chegar-info rv">
+      <div class="sec-head" style="margin-bottom:10px">
+        <span class="kicker">Como chegar</span>
+        <h2>No coração<br>da Fazenda</h2>
+      </div>
+      <ul>
+        <li>
+          <div class="ic"><i class="fa-solid fa-map-pin"></i></div>
+          <div class="tx"><strong>R. Fritz Schneider, 25</strong><span>Fazenda — Itajaí/SC · CEP 88301-668. Procura o contêiner vermelho: é impossível errar.</span></div>
+        </li>
+        <li>
+          <div class="ic"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="tx"><strong>(47) 99985-7365</strong><span>Chama no WhatsApp pra reservar mesa, tirar dúvida ou só dar o alô.</span></div>
+        </li>
+        <li>
+          <div class="ic"><i class="fa-regular fa-clock"></i></div>
+          <div class="tx"><strong>Horário</strong><span>Varia de acordo com o dia — chama no WhatsApp antes de colar com a turma.</span></div>
+        </li>
+      </ul>
+      <div class="chegar-cta">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=All%20Deck%20-%20Buteco%20Raiz&query_place_id=ChIJ-S1jHvDL2JQR941v9jmWHSI" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> Traçar rota</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/All-Deck-775694852542156/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+      </div>
+    </div>
+    <div class="fachada rv">
+      <div class="pol">
+        <img src="assets/fachada-real.jpg" alt="Fachada do All Deck: placa preta da casa e o cão de plantão na janela vermelha" loading="lazy">
+        <div class="cap">a placa — e o cão de plantão 🐶</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <img class="cta-logo rv" src="assets/all-deck-logo.png" alt="Logo oficial do All Deck — Buteco Raiz">
+    <h2 class="rv">Bora tomar um chopp?</h2>
+    <p class="rv">A mesa tá posta, o chopp tá gelado e o boteco raiz te espera. Chama no WhatsApp e garante teu lugar.</p>
+    <a class="btn btn-cream btn-padding rv" href="https://wa.me/5547999857365?text=Oi!%20To%20a%20caminho%21%20Consegue%20guardar%20uma%20mesa%3F" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+    <span class="hong rv">(47) 99985-7365 · R. Fritz Schneider, 25 — Fazenda</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="giant">ALL DECK<span class="dot">.</span></div>
+    <div class="foot-row">
+      <span>© 2026 All Deck — Buteco Raiz · Fazenda, Itajaí/SC</span>
+      <div class="links">
+        <a href="https://www.google.com/maps/search/?api=1&query=All%20Deck%20-%20Buteco%20Raiz&query_place_id=ChIJ-S1jHvDL2JQR941v9jmWHSI" target="_blank" rel="noopener">Google Maps</a>
+        <a href="https://www.facebook.com/All-Deck-775694852542156/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://wa.me/5547999857365" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// reveal
+(function(){
+  var items=document.querySelectorAll('.rv');
+  function done(){items.forEach(function(el){el.classList.add('in');});}
+  try{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    items.forEach(function(el){io.observe(el);});
+    setTimeout(done,2500);
+  }catch(e){done();}
+})();
+
+// reviews carousel
+(function(){
+  var inner=document.getElementById('revInner');
+  var cards=inner.children.length, idx=0;
+  var dots=document.getElementById('revDots');
+  for(var i=0;i<cards;i++){
+    var b=document.createElement('button');
+    b.setAttribute('aria-label','Ir para avaliação '+(i+1));
+    (function(n){b.addEventListener('click',function(){go(n);});})(i);
+    dots.appendChild(b);
+  }
+  function go(n){idx=(n+cards)%cards;inner.style.transform='translateX(-'+(idx*100)+'%)';
+    Array.prototype.forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===idx);});}
+  document.getElementById('revPrev').addEventListener('click',function(){go(idx-1);});
+  document.getElementById('revNext').addEventListener('click',function(){go(idx+1);});
+  var t=setInterval(function(){go(idx+1);},7000);
+  inner.closest('.rev-wrap').addEventListener('mouseenter',function(){clearInterval(t);});
+  go(0);
+})();
+</script>
+</body>
+</html>
