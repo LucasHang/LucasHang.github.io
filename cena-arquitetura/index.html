@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CENA arquitetura — Escritório de Arquitetura no Centro de Itajaí | Projetos residenciais e comerciais</title>
+<meta name="description" content="CENA arquitetura — escritório de arquitetura no Centro de Itajaí/SC, conduzido por arquitetas. Projetos residenciais e comerciais, nota 4,9 no Google. Converse pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="CENA arquitetura">
+<meta property="og:title" content="CENA arquitetura — Escritório de Arquitetura no Centro de Itajaí">
+<meta property="og:description" content="Projetos residenciais e comerciais. Nota 4,9 em 9 avaliações públicas no Google. Converse com as arquitetas pelo WhatsApp.">
+<meta property="og:url" content="https://lucashang.github.io/cena-arquitetura/">
+<meta property="og:image" content="https://lucashang.github.io/cena-arquitetura/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CENA arquitetura — Escritório de Arquitetura no Centro de Itajaí">
+<meta name="twitter:description" content="Projetos residenciais e comerciais. Nota 4,9 em 9 avaliações públicas no Google.">
+<meta name="twitter:image" content="https://lucashang.github.io/cena-arquitetura/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23231A15'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='34' fill='%23C2A48C' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<!-- Ícones: Font Awesome Free (CC BY 4.0) — attribution exigida: https://fontawesome.com/license/free -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --bg:#FBF9F5;        /* creme linho */
+  --sand:#ECE4DA;      /* areia quente */
+  --sand-soft:#F3EEE6;
+  --ink:#231A15;       /* café torrado */
+  --taupe:#7C726A;     /* taupe mineral (uso decorativo) */
+  --sub:#5F564D;       /* texto secundário (AA no creme) */
+  --caramel:#C2A48C;   /* caramelo suave (acento/ícones) */
+  --line:#DFD7CD;      /* hairline */
+  --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ink);color:var(--bg)}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#6E655D}
+.eyebrow i{font-size:7px;color:var(--caramel)}
+
+/* ---------- navbar ---------- */
+header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-size:22px;font-weight:700;letter-spacing:.22em;color:var(--ink)}
+.logo small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--sub);margin-top:1px}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:600;color:var(--ink)}
+.nav-links a{opacity:.7;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);border:none;border-radius:9999px;padding:13px 24px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.01em;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-light{background:var(--white);color:var(--ink);border:1px solid var(--line)}
+.btn-light:hover{border-color:var(--ink)}
+.btn-nav{padding:11px 20px;font-size:13.5px}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 26px}
+.hero-head{display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:end;margin-bottom:40px}
+.hero-head h1{font-weight:600;font-size:clamp(38px,5.2vw,60px);line-height:1.07;letter-spacing:-.022em;margin-top:20px}
+.hero-head h1 em{font-style:italic;font-weight:500}
+.hero-side{max-width:330px;justify-self:end}
+.hero-side p{font-size:15.5px;line-height:1.65;color:var(--sub)}
+.hero-side .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.island{position:relative;border-radius:28px;overflow:hidden;background:var(--sand)}
+.island>img{width:100%;height:clamp(380px,56vw,620px);object-fit:cover;object-position:center}
+.chip{position:absolute;display:inline-flex;align-items:center;gap:9px;background:var(--white);border-radius:9999px;padding:10px 18px;font-size:13px;font-weight:600;color:var(--ink)}
+.chip .stars{color:var(--caramel);font-size:12px;letter-spacing:1px}
+.chip-rate{top:20px;left:20px}
+.chip-cap{left:20px;bottom:20px;color:var(--sub);font-weight:500}
+.chip-cap b{color:var(--ink);font-weight:700}
+.hero-card{position:absolute;right:20px;bottom:20px;width:288px;background:var(--white);border-radius:20px;padding:22px 24px}
+.hero-card .lbl{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
+.hero-card .adr{font-size:15px;font-weight:600;line-height:1.45}
+.hero-card .row{display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;font-weight:600}
+.hero-card .row i{color:var(--caramel)}
+
+/* ---------- marquee ---------- */
+.mq{margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sand-soft);overflow:hidden;white-space:nowrap;padding:15px 0}
+.mq-track{display:inline-flex;animation:tick 34s linear infinite;will-change:transform}
+.mq span{display:inline-flex;align-items:center;gap:26px;padding:0 13px;font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sub)}
+.mq i{font-size:8px;color:var(--caramel)}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}}
+
+/* ---------- manifesto ---------- */
+.manifesto{padding:118px 0;text-align:center}
+.manifesto p{font-weight:600;font-size:clamp(26px,3.1vw,38px);line-height:1.34;letter-spacing:-.015em;max-width:880px;margin:0 auto}
+.manifesto p em{font-style:italic;font-weight:500}
+.manifesto .foot{margin-top:28px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sub);font-weight:700}
+.manifesto .foot i{color:var(--caramel);margin-right:8px}
+
+/* ---------- section base ---------- */
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px}
+.sec-head h2{font-weight:600;font-size:clamp(30px,3.4vw,44px);line-height:1.12;letter-spacing:-.02em;margin-top:16px}
+.sec-head h2 em{font-style:italic;font-weight:500}
+.sec-head .side{max-width:320px;font-size:14.5px;line-height:1.65;color:var(--sub)}
+
+/* ---------- credibilidade ---------- */
+.cred-grid{display:grid;grid-template-columns:.92fr 1.25fr .83fr;gap:22px;align-items:stretch}
+.metric{background:var(--sand);border-radius:24px;padding:34px 30px;display:flex;flex-direction:column}
+.metric .num{font-weight:700;font-size:76px;line-height:1;letter-spacing:-.03em}
+.metric .stars{color:var(--caramel);font-size:15px;letter-spacing:3px;margin:14px 0 10px}
+.metric p{font-size:14.5px;line-height:1.55;color:var(--sub)}
+.metric .mini{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:22px}
+.metric .mini .avs{display:flex}
+.avatar{width:38px;height:38px;min-width:38px;flex-shrink:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--bg);margin-left:-8px;border:2px solid var(--sand)}
+.avatar:first-child{margin-left:0}
+.av-1{background:#8A6F55}
+.av-2{background:#5E6E66}
+.metric .mini small{font-size:12.5px;line-height:1.4;color:var(--sub)}
+.cred-txt{padding:8px 18px;display:flex;flex-direction:column;justify-content:center}
+.cred-txt h3{font-weight:600;font-size:clamp(22px,2vw,27px);line-height:1.25;letter-spacing:-.015em;margin-bottom:16px}
+.cred-txt>p{font-size:15.5px;line-height:1.7;color:var(--sub);margin-bottom:24px;max-width:460px}
+.cred-list{list-style:none}
+.cred-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px;font-size:14.5px;line-height:1.55;color:var(--ink)}
+.cred-list li i{width:34px;height:34px;min-width:34px;flex-shrink:0;border-radius:50%;background:var(--sand);color:#8A6F55;display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;margin-top:1px}
+.pill{position:relative;border-radius:9999px;overflow:hidden;background:var(--sand);min-height:430px}
+.pill img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pill .tag{position:absolute;left:50%;transform:translateX(-50%);bottom:16px;background:var(--white);border-radius:9999px;padding:8px 16px;font-size:11.5px;font-weight:600;color:var(--sub);white-space:nowrap}
+
+/* ---------- serviços ---------- */
+.svc{background:var(--sand-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.svc-card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.svc-card .num{position:absolute;top:14px;right:22px;z-index:2;font-size:74px;font-weight:700;letter-spacing:-.04em;color:rgba(35,26,21,.10);line-height:1;pointer-events:none}
+.svc-card .ph{height:330px;overflow:hidden}
+.svc-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.svc-card:hover .ph img{transform:scale(1.05)}
+.svc-card .body{padding:28px 30px 30px;display:flex;flex-direction:column;flex:1}
+.svc-card h3{font-size:23px;font-weight:600;letter-spacing:-.015em;margin-bottom:10px}
+.svc-card p{font-size:14.5px;line-height:1.65;color:var(--sub);margin-bottom:20px}
+.svc-card .go{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--ink)}
+.svc-card .go .arr{width:34px;height:34px;min-width:34px;border-radius:50%;border:1px solid var(--ink);display:inline-flex;align-items:center;justify-content:center;font-size:12px;transition:background .2s,color .2s}
+.svc-card .go:hover .arr{background:var(--ink);color:var(--bg)}
+.svc-note{margin-top:22px;font-size:12.5px;color:var(--sub)}
+
+/* ---------- bento diferenciais ---------- */
+.bento{display:grid;grid-template-columns:1.05fr .95fr .85fr;grid-template-rows:auto auto;gap:22px;grid-template-areas:"big big pic" "c1 c2 pic"}
+.b-card{border-radius:24px;padding:34px 32px;display:flex;flex-direction:column;justify-content:flex-end}
+.b-big{grid-area:big;background:var(--ink);color:var(--bg);min-height:280px}
+.b-big .q{font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1.22;letter-spacing:-.02em}
+.b-big .q em{font-style:italic;font-weight:500;color:var(--caramel)}
+.b-big .attr{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:rgba(251,249,245,.6)}
+.b-1{grid-area:c1;background:var(--sand);min-height:210px}
+.b-2{grid-area:c2;background:var(--white);border:1px solid var(--line);min-height:210px}
+.b-card h3{font-size:20px;font-weight:600;letter-spacing:-.015em;line-height:1.3;margin-bottom:10px}
+.b-card p{font-size:14px;line-height:1.6;color:var(--sub)}
+.b-card .ic{width:44px;height:44px;min-width:44px;border-radius:50%;background:var(--bg);border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;color:#8A6F55;font-size:15px;margin-bottom:auto}
+.b-1 .ic,.b-2 .ic{margin-bottom:26px}
+.b-pic{grid-area:pic;position:relative;border-radius:24px;overflow:hidden;background:var(--sand);min-height:420px}
+.b-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.b-pic:hover img{transform:scale(1.04)}
+.b-pic .tag{position:absolute;left:16px;bottom:16px;background:var(--white);border-radius:9999px;padding:9px 16px;font-size:12px;font-weight:600;color:var(--sub)}
+
+/* ---------- em detalhe (foto real) ---------- */
+.detail-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
+.detail-txt h2{font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1.14;letter-spacing:-.02em;margin:16px 0 18px}
+.detail-txt h2 em{font-style:italic;font-weight:500}
+.detail-txt>p{font-size:15.5px;line-height:1.7;color:var(--sub);margin-bottom:26px;max-width:440px}
+.mat-tags{display:flex;flex-wrap:wrap;gap:10px}
+.mat-tags span{border:1px solid var(--line);background:var(--white);border-radius:9999px;padding:9px 16px;font-size:12.5px;font-weight:600;color:var(--ink)}
+.detail-pic{position:relative;border-radius:26px;overflow:hidden;background:var(--sand)}
+.detail-pic img{width:100%;height:560px;object-fit:cover}
+.detail-pic .tag{position:absolute;left:16px;bottom:16px;background:var(--white);border-radius:9999px;padding:10px 18px;font-size:12.5px;font-weight:600;color:var(--sub);display:inline-flex;align-items:center;gap:8px}
+.detail-pic .tag i{color:var(--caramel)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--sand-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rev-head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.rev-score{display:inline-flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--line);border-radius:9999px;padding:12px 22px;font-size:14px;font-weight:700}
+.rev-score .stars{color:var(--caramel);letter-spacing:2px;font-size:13px}
+.rev-score small{font-weight:600;color:var(--sub)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rev-card{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:36px 34px;display:flex;flex-direction:column}
+.rev-card .stars{color:var(--caramel);font-size:14px;letter-spacing:3px;margin-bottom:18px}
+.rev-card blockquote{font-size:16px;line-height:1.68;color:var(--ink);font-weight:500;margin-bottom:24px}
+.rev-card .who{display:flex;align-items:center;gap:13px;margin-top:auto}
+.rev-card .who .nm{font-size:14.5px;font-weight:700}
+.rev-card .who .src{font-size:12.5px;color:var(--sub)}
+
+/* ---------- local ---------- */
+.local-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.local-info h2{font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1.14;letter-spacing:-.02em;margin:16px 0 8px}
+.local-info h2 em{font-style:italic;font-weight:500}
+.local-info ul{list-style:none;margin:28px 0 32px}
+.local-info li{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}
+.local-info .ic{width:44px;height:44px;min-width:44px;flex-shrink:0;border-radius:50%;background:var(--sand);display:inline-flex;align-items:center;justify-content:center;color:#8A6F55;font-size:15px}
+.local-info strong{display:block;font-size:15.5px;margin-bottom:3px}
+.local-info span{font-size:14px;color:var(--sub);line-height:1.5}
+.local-info .btns{display:flex;gap:12px;flex-wrap:wrap}
+.local-card{background:var(--ink);color:var(--bg);border-radius:26px;padding:52px 44px;position:relative;overflow:hidden}
+.local-card .room{font-weight:700;font-size:clamp(60px,7vw,104px);line-height:1;letter-spacing:-.03em}
+.local-card .room em{font-style:italic;font-weight:500;color:var(--caramel)}
+.local-card .adr-big{margin-top:22px;font-size:17px;font-weight:600;line-height:1.5}
+.local-card .bairro{margin-top:6px;font-size:13.5px;color:rgba(251,249,245,.65);font-weight:500}
+.local-card .deco{position:absolute;right:-46px;top:-46px;width:190px;height:190px;border-radius:50%;border:1px solid rgba(194,164,140,.4)}
+.local-card .deco::after{content:"";position:absolute;inset:26px;border-radius:50%;border:1px solid rgba(194,164,140,.25)}
+
+/* ---------- CTA final ---------- */
+.cta-final{padding:104px 0}
+.cta-box{background:var(--ink);color:var(--bg);border-radius:28px;padding:88px 40px;text-align:center;position:relative;overflow:hidden}
+.cta-box .ring{position:absolute;border-radius:50%;border:1px solid rgba(194,164,140,.35)}
+.r1{width:230px;height:230px;left:-90px;top:-90px}
+.r2{width:300px;height:300px;right:-120px;bottom:-140px}
+.cta-box h2{font-weight:600;font-size:clamp(32px,4vw,54px);line-height:1.1;letter-spacing:-.02em;margin-bottom:18px;position:relative}
+.cta-box h2 em{font-style:italic;font-weight:500;color:var(--caramel)}
+.cta-box p{font-size:16px;color:rgba(251,249,245,.8);max-width:520px;margin:0 auto 36px;line-height:1.65;position:relative}
+.cta-box .btn-invert{background:var(--bg);color:var(--ink);font-size:15.5px;padding:17px 34px;position:relative}
+.cta-box .fone{display:block;margin-top:24px;font-size:14px;color:rgba(251,249,245,.65);position:relative;letter-spacing:.03em}
+
+/* ---------- footer ---------- */
+footer{padding:40px 0 0}
+.giant{font-weight:700;font-size:clamp(56px,12vw,168px);line-height:1;letter-spacing:-.02em;text-align:center;color:var(--ink);white-space:nowrap;overflow:hidden;user-select:none}
+.giant em{font-style:italic;font-weight:500;color:var(--caramel)}
+.foot-row{margin-top:36px;border-top:1px solid var(--line);padding:24px 0 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--sub)}
+.foot-row .links{display:flex;gap:20px;font-weight:600}
+.foot-row a:hover{color:var(--ink)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .cred-grid{grid-template-columns:1fr 1fr}
+  .cred-txt{grid-column:1/-1;order:-1;padding:0 6px}
+  .pill{min-height:380px}
+  .bento{grid-template-columns:1fr 1fr;grid-template-areas:"big big" "pic pic" "c1 c2"}
+  .b-pic{min-height:320px}
+  .nav-links{display:none}
+}
+@media (max-width:840px){
+  section{padding:70px 0}
+  .hero{padding-top:40px}
+  .hero-head{grid-template-columns:1fr;gap:24px;margin-bottom:28px}
+  .hero-side{justify-self:start;max-width:100%}
+  .hero-card{position:static;width:auto;margin-top:14px;border:1px solid var(--line)}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:36px}
+  .svc-grid{grid-template-columns:1fr}
+  .detail-grid{grid-template-columns:1fr;gap:34px}
+  .detail-pic img{height:440px}
+  .rev-grid{grid-template-columns:1fr}
+  .local-grid{grid-template-columns:1fr;gap:30px}
+  .manifesto{padding:80px 0}
+}
+@media (max-width:560px){
+  .cred-grid{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr;grid-template-areas:"big" "pic" "c1" "c2"}
+  .b-pic{min-height:280px}
+  .chip-cap{display:none}
+  .island>img{height:360px}
+  .cta-box{padding:64px 24px}
+  .local-card{padding:40px 28px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"CENA arquitetura",
+  "description":"Escritório de arquitetura em Itajaí/SC — projetos residenciais e comerciais.",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Getúlio Vargas, 162 - Sala 26 - Vila Operária","addressLocality":"Itajaí","addressRegion":"SC","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":-26.9079019,"longitude":-48.6722281},
+  "telephone":"+55 47 99623-8574",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"9"}
+}
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top">CENA<small>arquitetura</small></a>
+    <nav class="nav-links">
+      <a href="#servicos">O que projetamos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#reviews">Avaliações</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="btn btn-nav" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20arquitetura%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i> Conversar no WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding-bottom:0">
+  <div class="container">
+    <div class="hero-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-diamond"></i> Escritório de arquitetura · Centro, Itajaí/SC</span>
+        <h1>Arquitetura que entende <em>exatamente</em> o que você deseja.</h1>
+      </div>
+      <div class="hero-side">
+        <p>Escritório conduzido por arquitetas, com projetos residenciais e comerciais — lindos, funcionais e de muito bom gosto, nas palavras de quem já contratou.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20arquitetura%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Começar meu projeto</a>
+          <a class="btn btn-light" href="#servicos">Ver o que projetamos</a>
+        </div>
+      </div>
+    </div>
+    <div class="island rv">
+      <img src="gallery/gal-02.jpg" alt="Área gourmet projetada pelo escritório CENA arquitetura: marcenaria em carvalho, cerâmica verde-sálvia e pedra escura" loading="eager">
+      <span class="chip chip-rate"><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> 4,9 · 9 avaliações no Google</span>
+      <span class="chip chip-cap"><b>Área gourmet</b> · projeto do escritório, publicado no perfil do Google</span>
+      <div class="hero-card">
+        <div class="lbl">O escritório</div>
+        <div class="adr">Av. Getúlio Vargas, 162 — Sala 26<br>Vila Operária · Centro, Itajaí/SC</div>
+        <div class="row"><i class="fa-brands fa-whatsapp"></i> (47) 99623-8574</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-track">
+    <span>Projetos residenciais <i class="fa-solid fa-diamond"></i></span><span>Projetos comerciais <i class="fa-solid fa-diamond"></i></span><span>Centro · Itajaí/SC <i class="fa-solid fa-diamond"></i></span><span>Nota 4,9 no Google <i class="fa-solid fa-diamond"></i></span><span>Conduzido por arquitetas <i class="fa-solid fa-diamond"></i></span>
+    <span>Projetos residenciais <i class="fa-solid fa-diamond"></i></span><span>Projetos comerciais <i class="fa-solid fa-diamond"></i></span><span>Centro · Itajaí/SC <i class="fa-solid fa-diamond"></i></span><span>Nota 4,9 no Google <i class="fa-solid fa-diamond"></i></span><span>Conduzido por arquitetas <i class="fa-solid fa-diamond"></i></span>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto rv">
+  <div class="container">
+    <p>Bom projeto não começa no traço. Começa na <em>escuta</em> — e termina em um ambiente <em>lindo, funcional e de muito bom gosto.</em></p>
+    <div class="foot"><i class="fa-solid fa-diamond"></i> O método da CENA, nas palavras de quem já contratou</div>
+  </div>
+</section>
+
+<!-- CREDIBILIDADE -->
+<section style="padding-top:0" id="escritorio">
+  <div class="container">
+    <div class="cred-grid">
+      <div class="metric rv">
+        <span class="num">4,9</span>
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>Média nas avaliações públicas do Google — nota máxima em quase todas elas.</p>
+        <div class="mini">
+          <div class="avs"><span class="avatar av-1">MM</span><span class="avatar av-2">FZ</span></div>
+          <small>avaliações reais, de clientes reais — leia na íntegra abaixo</small>
+        </div>
+      </div>
+      <div class="cred-txt rv">
+        <span class="eyebrow" style="margin-bottom:14px"><i class="fa-solid fa-diamond"></i> Quem projeta</span>
+        <h3>Um escritório conduzido por arquitetas — e por escuta.</h3>
+        <p>As clientes da CENA descrevem sempre o mesmo padrão: elas escutam primeiro, organizam tudo e entregam o ambiente que você imaginou — só que melhor.</p>
+        <ul class="cred-list">
+          <li><i class="fa-regular fa-comments"></i><span><strong>Escuta antes do traço</strong> — “entendem exatamente o que o cliente deseja”.</span></li>
+          <li><i class="fa-regular fa-folder-open"></i><span><strong>Organização em cada detalhe</strong> — “sempre com muita organização e cuidado”.</span></li>
+          <li><i class="fa-regular fa-circle-check"></i><span><strong>Segurança do início ao fim</strong> — “transmitem segurança em todas as etapas”.</span></li>
+        </ul>
+      </div>
+      <div class="pill rv">
+        <img src="ia-planta.jpg" alt="Planta humanizada sobre mesa de carvalho, com amostras de materiais — representação ilustrativa" loading="lazy">
+        <span class="tag">Representação ilustrativa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="svc" id="servicos">
+  <div class="container">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-diamond"></i> O que a CENA projeta</span>
+        <h2>Duas frentes, <em>um mesmo cuidado</em></h2>
+      </div>
+      <p class="side">Da casa ao negócio: cada projeto começa com uma conversa sobre o que você deseja — e só depois vira desenho.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card rv">
+        <span class="num">01</span>
+        <div class="ph"><img src="ia-living.jpg" alt="Estar residencial em tons creme e madeira clara — atmosfera ilustrativa" loading="lazy"></div>
+        <div class="body">
+          <h3>Projetos residenciais</h3>
+          <p>Casa, apartamento ou aquele ambiente que pede transformação: as arquitetas traduzem a sua ideia em um projeto lindo e funcional — feito para o seu dia a dia.</p>
+          <a class="go" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20e%20quero%20conversar%20sobre%20um%20projeto%20residencial." target="_blank" rel="noopener">Conversar sobre minha casa <span class="arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+      </div>
+      <div class="svc-card rv">
+        <span class="num">02</span>
+        <div class="ph"><img src="ia-comercial.jpg" alt="Recepção comercial minimalista em madeira clara — atmosfera ilustrativa" loading="lazy"></div>
+        <div class="body">
+          <h3>Projetos comerciais</h3>
+          <p>Salas, escritórios e espaços de negócio que passam credibilidade: do estúdio universitário ao corporativo, cada ambiente nasce com função e identidade.</p>
+          <a class="go" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20e%20quero%20conversar%20sobre%20um%20projeto%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Conversar sobre meu negócio <span class="arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+      </div>
+    </div>
+    <p class="svc-note rv">Fotos de atmosfera ilustrativas. O repertório real do escritório está publicado no perfil do Google — e uma amostra logo abaixo.</p>
+  </div>
+</section>
+
+<!-- BENTO DIFERENCIAIS -->
+<section id="diferenciais">
+  <div class="container">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-diamond"></i> Diferenciais</span>
+        <h2>Por que dizem que foi <em>“a melhor escolha”</em></h2>
+      </div>
+      <p class="side">Nada aqui é promessa nossa: são frases tiradas das avaliações públicas do escritório.</p>
+    </div>
+    <div class="bento">
+      <div class="b-card b-big rv">
+        <div class="q">“Transmitem <em>segurança</em> em todas as etapas, sempre com muita <em>organização</em> e cuidado nos detalhes.”</div>
+        <div class="attr">Maria Mundy · avaliação 5★ no Google</div>
+      </div>
+      <div class="b-card b-1 rv">
+        <span class="ic"><i class="fa-solid fa-ear-listen"></i></span>
+        <h3>Escuta que vira projeto</h3>
+        <p>“Conseguem entender exatamente o que o cliente deseja” — o desejo vira desenho, não o contrário.</p>
+      </div>
+      <div class="b-card b-2 rv">
+        <span class="ic"><i class="fa-regular fa-gem"></i></span>
+        <h3>Bom gosto com função</h3>
+        <p>“Projeto lindo, funcional e de muito bom gosto” — estética que resolve o uso, não só a foto.</p>
+      </div>
+      <div class="b-pic rv">
+        <img src="ia-textura.jpg" alt="Paleta de materiais: carvalho, linho, granito preto e cerâmica verde-sálvia — representação ilustrativa" loading="lazy">
+        <span class="tag">Repertório de materiais · ilustrativo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EM DETALHE -->
+<section style="padding-top:0">
+  <div class="container detail-grid">
+    <div class="detail-txt rv">
+      <span class="eyebrow"><i class="fa-solid fa-diamond"></i> Do perfil do escritório</span>
+      <h2>O detalhe <em>entrega</em> o capricho</h2>
+      <p>Nesta área gourmet publicada pelo próprio escritório, o desenho aparece nas escolhas silenciosas: a cerâmica vertical que dá ritmo à parede, a madeira clara que aquece, a pedra escura que ancora a bancada.</p>
+      <div class="mat-tags">
+        <span>Cerâmica vertical sálvia</span><span>Marcenaria em carvalho</span><span>Pedra escura</span><span>Trama natural</span>
+      </div>
+    </div>
+    <div class="detail-pic rv">
+      <img src="gallery/gal-01.jpg" alt="Área gourmet projetada pelo escritório, em enquadramento vertical: ilha em carvalho, cerâmica verde e churrasqueira em pedra" loading="lazy">
+      <span class="tag"><i class="fa-regular fa-image"></i> Foto publicada no perfil do escritório no Google</span>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="rev-head rv">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-diamond"></i> Palavra de quem contratou</span>
+        <h2 style="font-weight:600;font-size:clamp(28px,3vw,40px);letter-spacing:-.02em;margin-top:14px">Quem projetou com a CENA, <em style="font-weight:500">recomenda</em></h2>
+      </div>
+      <span class="rev-score"><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> 4,9 <small>· 9 avaliações no Google</small></span>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card rv">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>“Excelentes profissionais! Muito dedicadas, atenciosas e criativas. Conseguem entender exatamente o que o cliente deseja e transformar as ideias em um projeto lindo, funcional e de muito bom gosto. Além disso, transmitem segurança em todas as etapas, sempre com muita organização e cuidado nos detalhes.”</blockquote>
+        <div class="who"><span class="avatar av-1">MM</span><div><div class="nm">Maria Mundy</div><div class="src">Avaliação 5★ no Google</div></div></div>
+      </div>
+      <div class="rev-card rv">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>“A melhor escolha que fiz! ...O que elas fazem para transformar a sua ideia ou o seu ambiente é muito melhor. Acredite!!”</blockquote>
+        <div class="who"><span class="avatar av-2">FZ</span><div><div class="nm">Felipe Zéca</div><div class="src">Avaliação 5★ no Google</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL -->
+<section id="local">
+  <div class="container local-grid">
+    <div class="local-info rv">
+      <span class="eyebrow"><i class="fa-solid fa-diamond"></i> Onde estamos</span>
+      <h2>No Centro de Itajaí, <em>perto de você</em></h2>
+      <ul>
+        <li><div class="ic"><i class="fa-solid fa-location-dot"></i></div><div><strong>Av. Getúlio Vargas, 162 — Sala 26</strong><span>Vila Operária · região Central · Itajaí/SC</span></div></li>
+        <li><div class="ic"><i class="fa-brands fa-whatsapp"></i></div><div><strong>(47) 99623-8574</strong><span>O primeiro passo é uma conversa: conte a sua ideia pelo WhatsApp.</span></div></li>
+        <li><div class="ic"><i class="fa-regular fa-compass"></i></div><div><strong>Como chegar</strong><span>Abra a rota no Google Maps e visite o escritório.</span></div></li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=CENA%20arquitetura&query_place_id=ChIJsenbxHjN2JQR163q23r3Cyg" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> Abrir no Maps</a>
+        <a class="btn btn-light" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20conversa%20com%20as%20arquitetas%20da%20CENA." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Agendar conversa</a>
+      </div>
+    </div>
+    <div class="local-card rv">
+      <span class="deco" aria-hidden="true"></span>
+      <div class="room">Sala <em>26</em></div>
+      <div class="adr-big">Av. Getúlio Vargas, 162</div>
+      <div class="bairro">Vila Operária · Centro · Itajaí/SC</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" style="padding-top:0">
+  <div class="container">
+    <div class="cta-box rv">
+      <span class="ring r1" aria-hidden="true"></span>
+      <span class="ring r2" aria-hidden="true"></span>
+      <h2>Sua ideia merece virar <em>cena.</em></h2>
+      <p>Conte no WhatsApp o que você imagina para a sua casa ou o seu negócio — as arquitetas da CENA transformam em projeto.</p>
+      <a class="btn btn-invert" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20arquitetura%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Conversar com as arquitetas</a>
+      <span class="fone">(47) 99623-8574 · Av. Getúlio Vargas, 162 — Sala 26 · Centro, Itajaí/SC</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="giant">CENA<em>.</em></div>
+    <div class="foot-row">
+      <span>© 2026 CENA arquitetura · Centro, Itajaí/SC</span>
+      <div class="links">
+        <a href="https://www.google.com/maps/search/?api=1&query=CENA%20arquitetura&query_place_id=ChIJsenbxHjN2JQR163q23r3Cyg" target="_blank" rel="noopener">Google Maps</a>
+        <a href="https://wa.me/5547996238574" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// reveal com fallback obrigatório (2.5s)
+(function(){
+  var items=document.querySelectorAll('.rv');
+  function done(){items.forEach(function(el){el.classList.add('in');});}
+  try{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+    items.forEach(function(el){io.observe(el);});
+    setTimeout(done,2500);
+  }catch(e){done();}
+})();
+</script>
+</body>
+</html>

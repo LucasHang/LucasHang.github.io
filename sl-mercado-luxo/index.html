@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SL Mercado de Luxo — Imóveis de Alto Padrão na Praia Brava e Litoral de SC</title>
+<meta name="description" content="SL Mercado de Luxo — imobiliária de alto padrão com sede na Praia Brava, Itajaí. Os melhores imóveis do litoral catarinense com atendimento personalizado da Corretora Lucidi. Nota 5,0 no Google. Fale pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="SL Mercado de Luxo">
+<meta property="og:title" content="SL Mercado de Luxo — Imóveis de Alto Padrão | Praia Brava, Itajaí">
+<meta property="og:description" content="Os melhores imóveis do litoral catarinense, com atendimento personalizado. Sede na Praia Brava. Nota 5,0 no Google. Fale com a Lucidi.">
+<meta property="og:url" content="https://lucashang.github.io/sl-mercado-luxo/">
+<meta property="og:image" content="https://lucashang.github.io/sl-mercado-luxo/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SL Mercado de Luxo — Imóveis de Alto Padrão | Praia Brava">
+<meta name="twitter:description" content="Os melhores imóveis do litoral catarinense, com atendimento personalizado. Nota 5,0 no Google.">
+<meta name="twitter:image" content="https://lucashang.github.io/sl-mercado-luxo/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230D0D0D'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23D8A37A' text-anchor='middle' letter-spacing='1'%3ESL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Ícones: Font Awesome Free (CC BY 4.0) — attribution exigida: https://fontawesome.com/license/free -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --ink:#1A1A1A;
+  --dark:#0D0D0D;
+  --muted:#707070;
+  --line:#E8E8E8;
+  --terra:#A97142;
+  --terra-soft:#D8A37A;
+  --soft:#F6F2EC;
+  --shadow:0 30px 70px -30px rgba(13,13,13,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;font-weight:400;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--dark);color:#fff}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Cormorant Garamond',serif}
+.it{font-style:italic}
+.kicker{display:block;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+
+/* ---------- navbar: pill flutuante, fundo SÓLIDO ---------- */
+header{position:fixed;top:14px;left:0;right:0;z-index:60;pointer-events:none}
+.nav{pointer-events:auto;max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--dark);border:1px solid rgba(255,255,255,.08);border-radius:9999px;padding:10px 10px 10px 26px;box-shadow:0 18px 44px -20px rgba(13,13,13,.55)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;letter-spacing:.04em;color:#fff;white-space:nowrap}
+.logo b{font-style:italic;font-weight:400;color:var(--terra-soft)}
+.nav-links{display:flex;gap:28px;font-size:13px;font-weight:500;color:rgba(255,255,255,.85)}
+.nav-links a{opacity:.8;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;border:none;border-radius:9999px;padding:13px 26px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.01em;cursor:pointer;transition:transform .2s, box-shadow .2s, background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px -14px rgba(13,13,13,.5)}
+.btn-wa{background:#fff;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(26,26,26,.4)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+/* ---------- hero-as-a-card ---------- */
+.hero-wrap{padding:92px 16px 0}
+.hero-card{position:relative;border-radius:30px;overflow:hidden;min-height:calc(92vh - 92px);display:flex;flex-direction:column;justify-content:flex-end}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.82) 0%,rgba(13,13,13,.44) 46%,rgba(13,13,13,.06) 72%),linear-gradient(to bottom,rgba(13,13,13,.3) 0%,rgba(13,13,13,0) 26%)}
+.hero-inner{position:relative;z-index:2;padding:56px 60px;display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.hero-copy{max-width:640px;color:#fff}
+.hero-copy .eyebrow{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:#fff;color:var(--ink);border-radius:9999px;padding:8px 16px;margin-bottom:22px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(42px,5.6vw,74px);line-height:1.05;letter-spacing:.01em;text-shadow:0 2px 26px rgba(0,0,0,.35)}
+.hero-copy p{font-size:16px;font-weight:300;line-height:1.65;margin-top:18px;max-width:520px;color:rgba(255,255,255,.97);text-shadow:0 1px 18px rgba(0,0,0,.45)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero-stat{flex-shrink:0;background:#fff;border-radius:22px;padding:26px 28px;min-width:230px;box-shadow:var(--shadow)}
+.hero-stat .score{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:500;line-height:1;color:var(--ink)}
+.hero-stat .score small{font-size:20px;color:var(--muted)}
+.hero-stat .stars{color:var(--terra);font-size:13px;letter-spacing:3px;margin:8px 0 10px}
+.hero-stat p{font-size:12.5px;line-height:1.5;color:var(--muted)}
+
+/* ---------- ticker ---------- */
+.ticker{margin-top:16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:15px 0;font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.ticker-track{display:inline-flex;animation:tick 32s linear infinite;will-change:transform}
+.ticker span{padding:0 20px;display:inline-flex;align-items:center;gap:20px}
+.ticker i{font-size:7px;color:var(--terra)}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+/* ---------- manifesto ---------- */
+.manifesto{padding:110px 0;text-align:center}
+.manifesto p{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(27px,3.4vw,40px);line-height:1.38;max-width:840px;margin:0 auto}
+.manifesto .foot{margin-top:28px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);font-weight:600}
+
+/* ---------- tríptico ---------- */
+section{padding:88px 0}
+.triptico{display:grid;grid-template-columns:1fr .8fr 1fr;gap:44px;align-items:stretch}
+.tri-copy h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(32px,3.4vw,46px);line-height:1.12;margin-bottom:18px}
+.tri-copy>p{font-size:15px;font-weight:300;line-height:1.75;color:var(--muted);max-width:380px}
+.tri-photo{position:relative;border-radius:24px;overflow:hidden;min-height:460px}
+.tri-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tri-photo .cap{position:absolute;bottom:14px;left:14px;right:14px;background:#fff;font-size:11.5px;font-weight:600;color:var(--muted);padding:9px 16px;border-radius:14px;text-align:center;line-height:1.4}
+.tri-list{list-style:none;display:flex;flex-direction:column}
+.tri-list li{padding:20px 0;border-top:1px solid var(--line)}
+.tri-list li:first-child{border-top:none;padding-top:0}
+.tri-list strong{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:21px;margin-bottom:5px}
+.tri-list span{font-size:13.5px;font-weight:300;color:#565656;line-height:1.6}
+.tri-proof{margin-top:auto;padding-top:22px;border-top:1px solid var(--line);display:flex;align-items:center;gap:14px}
+.tri-proof .stack{display:flex}
+.tri-proof .stack span{width:36px;height:36px;min-width:36px;flex-shrink:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;margin-left:-8px;border:2px solid #fff}
+.tri-proof .stack span:first-child{margin-left:0}
+.tri-proof small{font-size:12.5px;color:var(--muted);line-height:1.45}
+
+/* ---------- faixa escura: a Lucidi ---------- */
+.dark{background:var(--dark);color:#fff;border-radius:0}
+.dark-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.mono{font-family:'Cormorant Garamond',serif;font-size:clamp(120px,16vw,220px);line-height:.9;font-style:italic;color:var(--terra-soft);opacity:.9;user-select:none}
+.dark h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(34px,3.6vw,50px);line-height:1.12;margin-bottom:18px}
+.dark p{font-size:15.5px;font-weight:300;line-height:1.75;color:rgba(255,255,255,.88);max-width:460px;margin-bottom:14px}
+.dark .sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:var(--terra-soft);margin:22px 0 30px}
+.dark .btn-wa{font-size:15px;padding:15px 32px}
+.dark .fone{display:block;margin-top:18px;font-size:13.5px;color:rgba(255,255,255,.72);letter-spacing:.03em}
+
+/* ---------- vitrine ---------- */
+.vitrine{background:var(--soft)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:46px}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(34px,3.6vw,50px);line-height:1.1}
+.sec-head .side{max-width:320px;font-size:14.5px;font-weight:300;line-height:1.6;color:#5F5F5F}
+.vit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.vit-card{position:relative;border-radius:24px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .3s ease, box-shadow .3s ease}
+.vit-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.vit-card .ph{height:380px;overflow:hidden}
+.vit-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.vit-card:hover .ph img{transform:scale(1.05)}
+.vit-card .badge{position:absolute;top:14px;left:14px;background:#fff;color:var(--ink);font-size:11px;font-weight:600;letter-spacing:.05em;border-radius:9999px;padding:7px 14px}
+.vit-card .body{padding:22px;flex:1;display:flex;flex-direction:column}
+.vit-card h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:25px;line-height:1.15;margin-bottom:8px}
+.vit-card .body p{font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.6;flex:1}
+.vit-card .cta{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:13px;font-weight:600;color:var(--terra)}
+.vit-card .cta i{font-size:11px;transition:transform .2s}
+.vit-card:hover .cta i{transform:translateX(4px)}
+.svc-note{margin-top:22px;font-size:12.5px;color:#59534B}
+
+/* ---------- depoimentos ---------- */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px 30px;display:flex;flex-direction:column}
+.rev-card .stars{color:var(--terra);font-size:13px;letter-spacing:3px;margin-bottom:16px}
+.rev-card blockquote{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.45;color:var(--ink);flex:1}
+.rev-card .who{display:flex;align-items:center;gap:13px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.rev-card .ava{width:42px;height:42px;min-width:42px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fff}
+.rev-card .who strong{display:block;font-size:14px}
+.rev-card .who small{font-size:12px;color:var(--muted)}
+.rev-note{margin-top:26px;text-align:center;font-size:12.5px;color:var(--muted)}
+.rev-note i{color:var(--terra);margin-right:6px}
+
+/* ---------- onde estamos ---------- */
+.local-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.local-info ul{list-style:none;margin:26px 0 30px}
+.local-info li{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}
+.local-info .ic{width:44px;height:44px;min-width:44px;flex-shrink:0;border-radius:14px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--ink);font-size:16px}
+.local-info strong{display:block;font-size:15.5px;margin-bottom:3px}
+.local-info span{font-size:13.5px;font-weight:300;color:#565656;line-height:1.55}
+.map-card{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.map-card svg{display:block;width:100%;height:auto}
+.map-pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,-118%);background:var(--dark);color:#fff;font-size:12px;font-weight:600;border-radius:9999px;padding:8px 16px;white-space:nowrap}
+.map-cap{position:absolute;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.map-cap .tag{background:#fff;border-radius:9999px;padding:8px 16px;font-size:12px;font-weight:600;color:var(--ink)}
+.map-cap a{background:var(--ink);color:#fff;border-radius:9999px;padding:8px 16px;font-size:12px;font-weight:600}
+
+/* ---------- CTA final ---------- */
+.cta-final{padding:40px 0 96px}
+.cta-box{background:var(--dark);color:#fff;border-radius:30px;padding:84px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-box .ring{position:absolute;border:1px solid rgba(216,163,122,.35);border-radius:50%}
+.r1{width:340px;height:340px;top:-140px;left:-120px}
+.r2{width:460px;height:460px;bottom:-240px;right:-160px}
+.cta-box h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(38px,4.6vw,62px);line-height:1.08;margin-bottom:16px;position:relative}
+.cta-box p{font-size:16px;font-weight:300;color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 34px;line-height:1.65;position:relative}
+.cta-box .btn-invert{background:#fff;color:var(--ink);font-size:15.5px;padding:16px 36px;position:relative}
+.cta-box .fone{display:block;margin-top:24px;font-size:13.5px;color:rgba(255,255,255,.55);position:relative;letter-spacing:.04em}
+
+/* ---------- footer ---------- */
+footer{padding:40px 0 0;border-top:1px solid var(--line)}
+.giant{font-family:'Cormorant Garamond',serif;font-weight:400;font-style:italic;font-size:clamp(40px,8.6vw,120px);line-height:1;text-align:center;color:var(--ink);white-space:nowrap;overflow:hidden;user-select:none}
+.foot-row{margin-top:36px;border-top:1px solid var(--line);padding:22px 0 26px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot-row .links{display:flex;gap:20px;font-weight:600}
+.foot-row a:hover{color:var(--ink)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .nav-links{display:none}
+  .hero-inner{flex-direction:column;align-items:flex-start;padding:44px 30px}
+  .hero-stat{min-width:0}
+  .triptico{grid-template-columns:1fr;gap:32px}
+  .tri-photo{min-height:420px}
+  .dark-grid{grid-template-columns:1fr;gap:28px}
+  .mono{font-size:110px}
+  .vit-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .local-grid{grid-template-columns:1fr;gap:34px}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:12px}
+}
+@media (max-width:620px){
+  .hero-wrap{padding:78px 10px 0}
+  .hero-card{border-radius:22px;min-height:calc(100svh - 78px)}
+  .hero-inner{padding:34px 20px}
+  .vit-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .manifesto{padding:72px 0}
+  .cta-box{padding:56px 22px}
+  .nav{padding:8px 8px 8px 20px;margin:0 8px}
+  .logo{font-size:20px}
+  .local-actions .btn{width:100%;justify-content:center}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"RealEstateAgent",
+  "name":"SL Mercado de Luxo",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Osvaldo Reis, 3385 - Sala 906","addressLocality":"Itajaí","addressRegion":"SC","postalCode":"88306-001","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":-26.9533222,"longitude":-48.6395927},
+  "telephone":"+55 47 99733-3016",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0"}
+}
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="#top">SL <b>Mercado de Luxo</b></a>
+      <div class="nav-links">
+        <a href="#curadoria">A imobiliária</a>
+        <a href="#lucidi">A Lucidi</a>
+        <a href="#vitrine">Padrão de imóveis</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#local">Onde estamos</a>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20SL%20Mercado%20de%20Luxo%20e%20quero%20conversar%20com%20a%20Lucidi%20sobre%20im%C3%B3veis%20de%20alto%20padr%C3%A3o%20na%20Praia%20Brava." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Fale com a Lucidi
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero-wrap" id="top">
+  <section class="hero-card">
+    <div class="hero-bg"><img src="hero.jpg" alt="Terraço de cobertura de alto padrão com piscina e vista para o mar ao entardecer — imagem ilustrativa do padrão de imóvel do litoral" loading="eager"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Imobiliária de alto padrão · Praia Brava, Itajaí</span>
+        <h1>Os melhores imóveis do <span class="it">litoral catarinense</span> começam com a escuta certa.</h1>
+        <p>Imóveis de alto padrão na Praia Brava e no litoral de Santa Catarina — com o atendimento próximo, esclarecedor e dedicado que os clientes da SL apontam nome e sobrenome.</p>
+        <div class="hero-cta">
+          <a class="btn" style="background:var(--terra)" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Quero%20conversar%20com%20a%20Lucidi%20sobre%20im%C3%B3veis%20de%20alto%20padr%C3%A3o%20na%20Praia%20Brava." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Fale com a Lucidi</a>
+          <a class="btn btn-wa" href="#vitrine"><i class="fa-solid fa-gem"></i> Veja o padrão de imóvel</a>
+        </div>
+      </div>
+      <div class="hero-stat">
+        <div class="score">5,0<small>/5</small></div>
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>Nota máxima nas avaliações públicas da imobiliária no Google.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Praia Brava <i class="fa-solid fa-circle"></i></span><span>Litoral catarinense <i class="fa-solid fa-circle"></i></span><span>Imóveis de alto padrão <i class="fa-solid fa-circle"></i></span><span>Atendimento com a Lucidi <i class="fa-solid fa-circle"></i></span><span>Curadoria imobiliária <i class="fa-solid fa-circle"></i></span><span>Nota 5,0 no Google <i class="fa-solid fa-circle"></i></span>
+    <span>Praia Brava <i class="fa-solid fa-circle"></i></span><span>Litoral catarinense <i class="fa-solid fa-circle"></i></span><span>Imóveis de alto padrão <i class="fa-solid fa-circle"></i></span><span>Atendimento com a Lucidi <i class="fa-solid fa-circle"></i></span><span>Curadoria imobiliária <i class="fa-solid fa-circle"></i></span><span>Nota 5,0 no Google <i class="fa-solid fa-circle"></i></span>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto rv">
+  <div class="container">
+    <p>Mercado de luxo não é uma faixa de preço. É a <span class="it">curadoria</span> de onde a vida acontece — e o cuidado de quem conduz você até <span class="it">o endereço certo.</span></p>
+    <div class="foot">— a filosofia da SL Mercado de Luxo</div>
+  </div>
+</section>
+
+<!-- TRÍPTICO -->
+<section id="curadoria" style="padding-top:0">
+  <div class="container">
+    <div class="triptico rv">
+      <div class="tri-copy">
+        <span class="kicker">A imobiliária</span>
+        <h2>Curadoria de alto padrão, <span class="it">da Praia Brava para todo o litoral</span></h2>
+        <p>A SL Mercado de Luxo seleciona imóveis de alto padrão na Praia Brava e no litoral catarinense — e conduz cada conversa com o profissionalismo e a dedicação que as avaliações públicas destacam.</p>
+      </div>
+      <div class="tri-photo">
+        <img src="gallery/gal-01.jpg" alt="Deck privativo com piscina e vista para marina e skyline — foto real publicada no perfil da imobiliária" loading="lazy">
+        <span class="cap">Foto real do perfil da imobiliária</span>
+      </div>
+      <ul class="tri-list">
+        <li><strong>Seleção de alto padrão</strong><span>Imóveis escolhidos a dedo na Praia Brava e nos endereços mais desejados do litoral de Santa Catarina.</span></li>
+        <li><strong>Atendimento que tem nome</strong><span>Conversas diretas com a Corretora Lucidi — esclarecimentos completos, sem pressa e sem pressão.</span></li>
+        <li><strong>Sede na Praia Brava</strong><span>Escritório na Av. Osvaldo Reis, 3385 — Sala 906, no coração do bairro que a SL chama de casa.</span></li>
+        <li class="tri-proof">
+          <div class="stack">
+            <span style="background:#8A5A33">A</span><span style="background:#31546B">J</span><span style="background:#6B4B7A">V</span>
+          </div>
+          <small>Avaliações reais no Google destacam profissionalismo, conhecimento e dedicação.</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA ESCURA: A LUCIDI -->
+<section class="dark" id="lucidi">
+  <div class="container">
+    <div class="dark-grid rv">
+      <div>
+        <span class="kicker" style="color:var(--terra-soft)">Quem atende você</span>
+        <h2>Bom atendimento tem <span class="it">nome</span>: Lucidi.</h2>
+        <p>Nas avaliações públicas, os clientes não citam “a imobiliária” — citam <strong style="font-weight:600">ela</strong>. O cuidado nos esclarecimentos, o carinho no trato e o conhecimento de quem vive o litoral catarinense são o que transforma uma visita em decisão certa.</p>
+        <p>Seja para encontrar o imóvel ideal na Praia Brava ou conhecer as melhores oportunidades do litoral, a conversa começa pelo WhatsApp — direto com quem entende.</p>
+        <div class="sig">“Conhecer o melhor do litoral começa com uma boa conversa.”</div>
+        <a class="btn btn-wa" href="https://wa.me/5547997333016?text=Ol%C3%A1%2C%20Lucidi%21%20Vi%20sua%20p%C3%A1gina%20e%20quero%20conhecer%20os%20melhores%20im%C3%B3veis%20do%20litoral%20catarinense." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chamar a Lucidi no WhatsApp</a>
+        <span class="fone">(47) 99733-3016 · Sede: Av. Osvaldo Reis, 3385 — Sala 906, Praia Brava</span>
+      </div>
+      <div style="text-align:right"><div class="mono" aria-hidden="true">L.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VITRINE -->
+<section class="vitrine" id="vitrine">
+  <div class="container">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">O padrão que a SL garimpa</span>
+        <h2>Alto padrão de verdade, <span class="it">sem genéricos</span></h2>
+      </div>
+      <p class="side">Três frentes que definem a seleção da SL. A carteira de imóveis disponíveis muda sempre — a curadoria atual é apresentada no atendimento.</p>
+    </div>
+    <div class="vit-grid">
+      <div class="vit-card rv">
+        <div class="ph"><img src="vitrine-fachada.jpg" alt="Fachada de residência alto padrão frente ao mar ao anoitecer — imagem ilustrativa" loading="lazy"></div>
+        <span class="badge">Ilustrativo</span>
+        <div class="body">
+          <h3>Endereços frente-mar</h3>
+          <p>Fachadas e coberturas nos bairros mais valorizados do litoral, começando pela Praia Brava — vista e posição que não se improvisam.</p>
+          <a class="cta" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Quero%20conhecer%20im%C3%B3veis%20frente-mar%20na%20Praia%20Brava%20e%20no%20litoral%20de%20SC." target="_blank" rel="noopener">Perguntar o que há disponível <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="vit-card rv">
+        <div class="ph"><img src="vitrine-interior.jpg" alt="Living amplo com pé-direito alto e janelas do chão ao teto com vista para o mar — imagem ilustrativa" loading="lazy"></div>
+        <span class="badge">Ilustrativo</span>
+        <div class="body">
+          <h3>Interiores que inspiram</h3>
+          <p>Plantas amplas, pé-direito generoso e luz natural em abundância — os detalhes que separam um bom imóvel de um imóvel memorável.</p>
+          <a class="cta" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Procuro%20im%C3%B3vel%20de%20alto%20padr%C3%A3o%20com%20planta%20ampla%20no%20litoral%20catarinense." target="_blank" rel="noopener">Perguntar o que há disponível <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="vit-card rv">
+        <div class="ph"><img src="vitrine-terraco.jpg" alt="Terraço premium com pergolado e vista para o litoral em luz dourada — imagem ilustrativa" loading="lazy"></div>
+        <span class="badge">Ilustrativo</span>
+        <div class="body">
+          <h3>Terraços com vista</h3>
+          <p>Espaços externos pensados para viver o litoral: terraços, pergolados e lounges com o mar de Santa Catarina como pano de fundo.</p>
+          <a class="cta" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Quero%20conhecer%20coberturas%20e%20im%C3%B3veis%20com%20terra%C3%A7o%20no%20litoral%20de%20SC." target="_blank" rel="noopener">Perguntar o que há disponível <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="svc-note rv">Imagens ilustrativas do padrão de imóvel que a SL seleciona — nenhum anúncio específico é exibido aqui. A carteira atual é apresentada diretamente no atendimento pelo WhatsApp.</p>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="sec-head rv" style="justify-content:center;text-align:center;display:block">
+      <span class="kicker">Depoimentos reais · Google</span>
+      <h2>Quem foi atendido, <span class="it">recomenda de nome</span></h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card rv">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>“Equipe de alto nível de profissionalismo, conhecimento e dedicação. Em especial a Corretora Lucidi pelo excepcional serviço.”</blockquote>
+        <div class="who"><div class="ava" style="background:#8A5A33">A</div><div><strong>Ariany Souza</strong><small>avaliação pública no Google</small></div></div>
+      </div>
+      <div class="rev-card rv">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>“Se você quer conhecer os melhores imóveis do litoral catarinense, conte com a melhor profissional. Parabéns, Lucidi.”</blockquote>
+        <div class="who"><div class="ava" style="background:#31546B">J</div><div><strong>Jonathan Diego</strong><small>avaliação pública no Google</small></div></div>
+      </div>
+      <div class="rev-card rv">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>“Depois de a conhecê-la melhor eu tive certeza. Obrigada pelos esclarecimentos e todo carinho que teve comigo.”</blockquote>
+        <div class="who"><div class="ava" style="background:#6B4B7A">V</div><div><strong>Vanessa Sheridan</strong><small>avaliação pública no Google</small></div></div>
+      </div>
+    </div>
+    <p class="rev-note rv"><i class="fa-solid fa-star"></i>Nota 5,0 nas avaliações públicas da imobiliária no Google.</p>
+  </div>
+</section>
+
+<!-- ONDE ESTAMOS -->
+<section id="local" style="padding-top:0">
+  <div class="container local-grid">
+    <div class="local-info rv">
+      <span class="kicker">Onde estamos</span>
+      <h2 class="serif" style="font-weight:400;font-size:clamp(32px,3.4vw,46px);line-height:1.12;text-wrap:balance">Na avenida mais nobre <span class="it">da Praia Brava</span></h2>
+      <ul>
+        <li><div class="ic"><i class="fa-solid fa-map-pin"></i></div><div><strong>Av. Osvaldo Reis, 3385 — Sala 906</strong><span>Praia Brava · Itajaí/SC · CEP 88306-001</span></div></li>
+        <li><div class="ic"><i class="fa-brands fa-whatsapp"></i></div><div><strong>(47) 99733-3016</strong><span>WhatsApp direto com a Lucidi — chame para tirar dúvidas ou agendar uma conversa.</span></div></li>
+        <li><div class="ic"><i class="fa-brands fa-instagram"></i></div><div><strong>@sl_mercadodeluxo</strong><span>Acompanhe a curadoria de imóveis também pelo Instagram.</span></div></li>
+      </ul>
+      <div class="local-actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=SL%20Mercado%20de%20Luxo&query_place_id=ChIJ3b9-El_L2JQRhGx9kRx5MxE" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> Abrir no Maps</a>
+        <a class="btn btn-ghost" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20sede%20da%20SL%20na%20Praia%20Brava." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+    <div class="map-card rv" aria-hidden="true">
+      <svg viewBox="0 0 560 430" fill="none">
+        <rect width="560" height="430" fill="#F6F2EC"/>
+        <!-- orla / beira-mar estilizada -->
+        <path d="M0 300 C 120 260, 200 300, 320 268 C 420 242, 500 262, 560 240 L560 430 L0 430 Z" fill="#E3D8C8"/>
+        <path d="M0 332 C 130 296, 210 330, 330 300 C 430 276, 505 296, 560 276 L560 430 L0 430 Z" fill="#D4E2E4"/>
+        <path d="M0 318 C 120 282, 205 318, 325 286 C 425 260, 502 282, 560 258" stroke="#C9BBA6" stroke-width="2" fill="none"/>
+        <!-- ruas -->
+        <path d="M84 0 C 96 90, 72 190, 108 300" stroke="#E0D5C4" stroke-width="16" fill="none"/>
+        <path d="M84 0 C 96 90, 72 190, 108 300" stroke="#FEFCF9" stroke-width="10" fill="none"/>
+        <path d="M0 120 H420 M0 200 H480 M180 0 V300 M300 0 V280 M420 0 V270" stroke="#EAE1D3" stroke-width="8"/>
+        <!-- pin -->
+        <circle cx="224" cy="212" r="46" fill="#0D0D0D" opacity=".08"/>
+        <path d="M224 168c-15 0-27 12-27 27 0 20 27 45 27 45s27-25 27-45c0-15-12-27-27-27zm0 37a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" fill="#A97142"/>
+      </svg>
+      <div class="map-pin-label">SL Mercado de Luxo · Sala 906</div>
+      <div class="map-cap">
+        <span class="tag"><i class="fa-solid fa-location-dot" style="color:var(--terra);margin-right:6px"></i>Praia Brava, Itajaí/SC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-box rv">
+      <div class="ring r1" aria-hidden="true"></div>
+      <div class="ring r2" aria-hidden="true"></div>
+      <h2>Seu próximo endereço começa com <span style="font-style:italic">uma conversa.</span></h2>
+      <p>Chame a Lucidi no WhatsApp e conte o que você procura — a curadoria certa dos melhores imóveis do litoral catarinense vem em seguida.</p>
+      <a class="btn btn-invert" href="https://wa.me/5547997333016?text=Ol%C3%A1%21%20Quero%20conversar%20com%20a%20Lucidi%20sobre%20im%C3%B3veis%20de%20alto%20padr%C3%A3o%20no%20litoral%20catarinense." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Fale com a Lucidi</a>
+      <span class="fone">(47) 99733-3016 · Av. Osvaldo Reis, 3385 — Sala 906 · Praia Brava, Itajaí/SC</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="giant">SL Mercado de Luxo.</div>
+    <div class="foot-row">
+      <span>© 2026 SL Mercado de Luxo · Praia Brava, Itajaí/SC</span>
+      <div class="links">
+        <a href="https://www.google.com/maps/search/?api=1&query=SL%20Mercado%20de%20Luxo&query_place_id=ChIJ3b9-El_L2JQRhGx9kRx5MxE" target="_blank" rel="noopener">Google Maps</a>
+        <a href="https://instagram.com/sl_mercadodeluxo" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5547997333016" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// reveal com fallback 2.5s
+(function(){
+  var items=document.querySelectorAll('.rv');
+  function done(){items.forEach(function(el){el.classList.add('in');});}
+  try{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+    items.forEach(function(el){io.observe(el);});
+    setTimeout(done,2500);
+  }catch(e){done();}
+})();
+</script>
+</body>
+</html>
