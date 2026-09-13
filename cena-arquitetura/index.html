@@ -169,6 +169,16 @@ section{padding:96px 0}
 .detail-pic img{width:100%;height:560px;object-fit:cover}
 .detail-pic .tag{position:absolute;left:16px;bottom:16px;background:var(--white);border-radius:9999px;padding:10px 18px;font-size:12.5px;font-weight:600;color:var(--sub);display:inline-flex;align-items:center;gap:8px}
 .detail-pic .tag i{color:var(--caramel)}
+.detail-pic.duo{border-radius:0;overflow:visible;background:transparent;display:flex;flex-direction:column;gap:16px}
+.detail-pic.duo figure{position:relative;margin:0;border-radius:26px;overflow:hidden;background:var(--sand)}
+.detail-pic.duo img{display:block;width:100%;object-fit:cover;height:auto}
+.detail-pic.duo .duo-main img{height:420px}
+.detail-pic.duo .duo-sub img{height:230px}
+.cta-links-sep{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,249,245,.5);margin:26px 0 10px;position:relative}
+.cta-links{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:center;position:relative}
+.cta-links a{color:rgba(251,249,245,.85);font-size:13.5px;font-weight:500;letter-spacing:.02em;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(251,249,245,.4);transition:color .2s}
+.cta-links a:hover{color:#fff}
+@media (max-width:980px){.detail-pic.duo .duo-main img{height:320px}.detail-pic.duo .duo-sub img{height:200px}}
 
 /* ---------- reviews ---------- */
 .reviews{background:var(--sand-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -445,9 +455,15 @@ footer{padding:40px 0 0}
         <span>Cerâmica vertical sálvia</span><span>Marcenaria em carvalho</span><span>Pedra escura</span><span>Trama natural</span>
       </div>
     </div>
-    <div class="detail-pic rv">
-      <img src="gallery/gal-01.jpg" alt="Área gourmet projetada pelo escritório, em enquadramento vertical: ilha em carvalho, cerâmica verde e churrasqueira em pedra" loading="lazy">
-      <span class="tag"><i class="fa-regular fa-image"></i> Foto publicada no perfil do escritório no Google</span>
+    <div class="detail-pic duo rv">
+      <figure class="duo-main">
+        <img src="gallery/gal-01.jpg" alt="Área gourmet projetada pelo escritório, em enquadramento vertical: ilha em carvalho, cerâmica verde e churrasqueira em pedra" loading="lazy">
+        <span class="tag"><i class="fa-regular fa-image"></i> Foto publicada no perfil do escritório no Google</span>
+      </figure>
+      <figure class="duo-sub">
+        <img src="assets/cena-projeto-real.webp" alt="Cozinha integrada projetada pela CENA: mesa marmorizada, armários ripados verde-claro e marcenaria clara — projeto real" loading="lazy">
+        <span class="tag"><i class="fa-solid fa-diamond"></i> Projeto real executado pela CENA</span>
+      </figure>
     </div>
   </div>
 </section>
@@ -511,6 +527,13 @@ footer{padding:40px 0 0}
       <h2>Sua ideia merece virar <em>cena.</em></h2>
       <p>Conte no WhatsApp o que você imagina para a sua casa ou o seu negócio — as arquitetas da CENA transformam em projeto.</p>
       <a class="btn btn-invert" href="https://wa.me/5547996238574?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20CENA%20arquitetura%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Conversar com as arquitetas</a>
+      <div class="cta-links-sep">ou resolva direto por aqui</div>
+      <div class="cta-links">
+        <a href="https://tr.ee/_5hYvs4gjw" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqC8mJMmz8CH2oyZjtylgETba57rniNhri4sfhCHwBvV_ymg/viewform" target="_blank" rel="noopener">Solicitar proposta de projeto</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSccUp3C6RB5KvQJlrG2BG6wEzTfCasuKDfSqKBXVw6XtaDnAA/viewform" target="_blank" rel="noopener">Assessoria de interiores</a>
+        <a href="https://drive.google.com/file/d/1ZXELOTVCK6Zp-78CtOH0r-UmFJfSN1lZ/view" target="_blank" rel="noopener">Baixar portfólio de projetos</a>
+      </div>
       <span class="fone">(47) 99623-8574 · Av. Getúlio Vargas, 162 — Sala 26 · Centro, Itajaí/SC</span>
     </div>
   </div>
